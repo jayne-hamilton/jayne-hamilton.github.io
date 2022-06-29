@@ -127,20 +127,31 @@ background-color: navajowhite;
 }
 
 @media only screen and (max-width: 700px){
-  .blog-container {
-    max-width: 700px;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .article-pic {
-    visibility: hidden;
-    height: 0px;
-  }
-  footer{
-    visibility: hidden;
-    height: 0px;
-  }
+      .blog-container {
+        max-width: 700px;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+      }
+      
+      .blog-item {
+        max-width: 700px;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+      }
+      
+      .blog-content {
+        max-width: 700px;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      footer{
+        visibility: hidden;
+        height: 0px;
+      }
 }
 
 .home-container {
