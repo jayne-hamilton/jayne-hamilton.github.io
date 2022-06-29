@@ -38,21 +38,21 @@ nav {
   margin: 0 20px 0 20px;
 }
 
-.welcome {
-  height:100px;
+h2 {
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  text-align:center;
 }
 
-/* .socials { 
+
+.socials { 
   display: flex;
   justify-content: center;
   flex-direction: column;
+  list-style-type: none;
   font-size: 13pt;
+  color: blue
 }
-*/
+
 
 section {
   width: 100%;
@@ -178,7 +178,7 @@ background-color: black;
 }
 
 .blog-content {
-  width: 900px;
+  width: 800px;
   display: flex;
   justify-content: center;
   flex-direction: column;
