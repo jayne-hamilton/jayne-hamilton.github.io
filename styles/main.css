@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 #header {
@@ -15,7 +15,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 nav {
@@ -32,6 +33,7 @@ nav {
   list-style-type: none;
   text-transform: uppercase;
   background-color: antiquewhite;
+  padding: 0;
 }
 
 .nav-bar li {
@@ -43,24 +45,13 @@ h2 {
   text-align:center;
 }
 
-
-.socials { 
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  list-style-type: none;
-  font-size: 13pt;
-  color: blue
-}
-
-
 section {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 30px 0 30px 0;
+  padding: 60px 0 90px 0;
 }
 
 .headshot {
@@ -93,15 +84,27 @@ a:active {
   color: orange;
 }
 
+.social-button-container{
+  width:100%;
+  height:auto;
+  display: flex;
+  justify-content:space-between ;
+  align-items:center;
+  flex-wrap: wrap;
+  flex-direction:column;
+}
+
 .button {
-  width: 200px;
-  padding: 5px ;
-  margin: 0 0 0 0;
-  font-size: 16pt;
+  width: 90px;
+  padding: 10px ;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12pt;
   background-color: darkgoldenrod;
   text-align: center;
+  /* text-transform: uppercase; */
   border-radius: 30px;
   color: white;
+  margin: 10 0 0 0;
 }
 
 .button:hover {
@@ -146,6 +149,7 @@ background-color: black;
   align-items:center;
   flex-wrap: wrap;
   flex-direction:row;
+  margin-top: 80px;
   /* background-color: lightgray; */
 }  
 
@@ -185,21 +189,7 @@ background-color: black;
   /* align-items: center; */
 }
 
-/* .everything_except_footer 
-{margin-bottom=-50px;}
-.footer,
-.extra_element{
-height=50px;
-align-items: center;
-}*/
 
-/* .footer {  
-  width: 100%
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: antiquewhite;
-}
 
 
 
