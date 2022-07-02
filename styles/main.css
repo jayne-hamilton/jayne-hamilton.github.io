@@ -96,7 +96,7 @@ a {
 }
 
 a:hover {
-  color: darkgoldenrod;
+  color: black;
 }
 
 a:active {
@@ -169,7 +169,7 @@ background-color: D1DCBF;
   background-color: white;
   flex-direction: column;
   font-size: 20pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Vidaloka', serif;
 }
 
 .blog-section {
