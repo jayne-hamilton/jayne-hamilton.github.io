@@ -19,6 +19,80 @@ html, body {
   height: 100px;
 }
 
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color:#E2ECDA; 
+  /* Create the gradient. */
+   background-image: linear-gradient(
+        40deg,
+        #B4C2AA 16.666%, 
+        #abc1a4 16.666%, 
+        #d6edb3 33.333%, 
+        #E2ECDA 33.333%, 
+        #98a894 50%, 
+        #E2ECDA 50%, 
+        #bfc7b9 66.666%, 
+        #abc1a4 66.666%, 
+        #d6edb3 83.333%, 
+        #98a894 83.333%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.65s ease forwards;
+}
+
+/* .gradient-text:hover{
+    animation: rainbow-text-simple-animation 0.8s ease-in forwards;
+} */
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+  
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  width: 605px;
+  flex-wrap: wrap;
+}
+
 #name h1 {
   font-family: 'Vidaloka', serif;
   font-size: 40pt;
@@ -32,7 +106,7 @@ html, body {
 nav {
   width: 100%;
   height: 45px;
-  background-color: #E2ECDA;
+  background-color: #E2ECDA; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,8 +120,6 @@ nav {
   list-style-type: none;
   text-transform: uppercase;
   background-color: #E2ECDA;
-  padding: 0;
-  margin: 0;
 }
 
 .nav-bar li {
@@ -57,7 +129,7 @@ nav {
 h2 {
   width: 100%;
   text-align:center;
-} 
+}  
 
 p {
   line-height: 1.5;
@@ -102,16 +174,18 @@ a:active {
   color: darkgoldenrod;
 }
 
-.social-button-container{
-  width:100%;
-  height:auto;
+.socials {
+  width:90px;
+  height:auto; 
   display: flex;
-  justify-content:space-around ;
-  flex-direction:column;
-
+  justify-content:space-between;
+  flex-direction:row;
+  font-size: 25pt;
 }
 
-.button {
+/* Removed as decided to add icons for socials
+
+  .button {
   width: 120px;
   padding: 10px 0 10px 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -125,7 +199,7 @@ a:active {
 
 .button:hover {
 background-color: #D1DCBF;
-}
+} */
 
 .home-container {
   width: 100%;
@@ -264,6 +338,7 @@ flex-direction: column;
   display: flex;
   align-items: center;
 }
+
 .blog-item {
 margin: 40px 0 0 0;
 }
