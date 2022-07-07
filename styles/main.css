@@ -19,41 +19,44 @@ html, body {
   height: 100px;
 }
 
-.gradient-text {
+ 
+/* ----Gradient header option-----------*/
+
+.gradient-text { 
   /* Fallback: Set a background color. */
-  background-color:#E2ECDA; 
+  background-color:#B4C2AA; 
   /* Create the gradient. */
-   background-image: linear-gradient(
-        40deg,
+  background-image: linear-gradient(
+        90deg,
         #B4C2AA 16.666%, 
-        #abc1a4 16.666%, 
+        #B4C2AA 16.666%, 
         #d6edb3 33.333%, 
-        #E2ECDA 33.333%, 
-        #98a894 50%, 
-        #E2ECDA 50%, 
-        #bfc7b9 66.666%, 
-        #abc1a4 66.666%, 
-        #d6edb3 83.333%, 
-        #98a894 83.333%);
+        #d4dfcb 33.333%, 
+        #d4dfcb 50%, 
+        #d4dfcb 50%, 
+        #d6edb3 66.666%, 
+        #d6edb3 66.666%, 
+        #B4C2AA 83.333%, 
+        #B4C2AA 83.333%); 
   
   /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
+  background-size: 100%; 
+  background-repeat: repeat; 
   /* Use the text as a mask for the background. */
   /* This will show the gradient as a text color rather than element bg. */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   /* Animate the text when loading the element. */
     /* This animates it on page load and when hovering out. */
-    animation: rainbow-text-simple-animation-rev 0.65s ease forwards;
+  animation: rainbow-text-simple-animation-rev 0.50s ease forwards;
 }
 
-/* .gradient-text:hover{
+.gradient-text:hover{
     animation: rainbow-text-simple-animation 0.8s ease-in forwards;
-} */
+} 
 /* Move the background and make it smaller. */
 /* Animation shown when entering the page and after the hover animation. */
-@keyframes rainbow-text-simple-animation-rev {
+ @keyframes rainbow-text-simple-animation-rev {
     0% {
         background-size: 650%;
     }
@@ -63,7 +66,7 @@ html, body {
     100% {
         background-size: 100%;
     }
-}
+} 
 /* Move the background and make it larger. */
 /* Animation shown when hovering over the text. */
 @keyframes rainbow-text-simple-animation {
@@ -76,7 +79,7 @@ html, body {
     100% {
         background-size: 650%;
     }
-}
+} 
   
 
 h1 {
@@ -91,17 +94,7 @@ h1 {
   cursor: pointer;
   width: 605px;
   flex-wrap: wrap;
-}
-
-#name h1 {
-  font-family: 'Vidaloka', serif;
-  font-size: 40pt;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+} 
 
 nav {
   width: 100%;
@@ -300,9 +293,11 @@ background-color: #D1DCBF;
     flex-direction: column;
   }
 
-  #name h1{
-    font-size: 35pt; 
-    margin: 15 0 15 0;
+  .gradient-text{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
   }
   
   #header {
@@ -329,10 +324,13 @@ justify-content: center;
 flex-direction: column;
 }
 
-#name h1{
-  font-size: 35pt; 
-  margin: 0;
+.gradient-text{
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
 }
+
 
 #header {
   display: flex;
