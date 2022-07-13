@@ -224,8 +224,9 @@ background-color: #D1DCBF;
   justify-content:space-around;
   align-items:center;
   flex-wrap: wrap; 
-  flex-direction:row;  
+  /* flex-direction:row;   */
   margin-top: 80px;
+
 }  
 
 .blog-item {
