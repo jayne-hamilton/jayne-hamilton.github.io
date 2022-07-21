@@ -9,6 +9,7 @@ html, body {
   margin: 0;
 }
 
+
 .wrapper {
   min-height: calc(100vh - 30px);
   overflow-y: scroll;
@@ -297,6 +298,10 @@ ul {
 .emo-list-items {
   line-height: 1.5; 
 } 
+
+.reflections-list {
+  line-height: 1.5;
+}
 
 /* FOOTER */
 
